@@ -1,3 +1,10 @@
+/*
+ * Language: Java
+ * Author:   Veck Hsiao @ PLSM, National Chengchi University, Taipei, Taiwan
+ * Time:     June/9/2014
+ * Usage:    Do word(term) counting
+ */
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.io.BufferedReader;

@@ -1,3 +1,10 @@
+/*
+ * Language: Java
+ * Author:   Veck Hsiao @ PLSM, National Chengchi University, Taipei, Taiwan
+ * Time:     June/9/2014
+ * Usage:    Do Chinese segmentation
+ */
+
 import java.io.IOException; 
 import java.io.Reader; 
 import java.io.StringReader;

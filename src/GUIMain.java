@@ -1,3 +1,10 @@
+/*
+ * Language: Java
+ * Author:   Veck Hsiao @ PLSM, National Chengchi University, Taipei, Taiwan
+ * Time:     June/9/2014
+ * Usage:    Graphic user interface of mmseg4j-seg-tf
+ */
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

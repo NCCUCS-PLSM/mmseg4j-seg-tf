@@ -1,3 +1,10 @@
+/*
+ * Language: Java
+ * Author:   Veck Hsiao @ PLSM, National Chengchi University, Taipei, Taiwan
+ * Time:     June/9/2014
+ * Usage:    Command line interface of mmseg4j-seg-tf
+ */
+
 import java.io.IOException;
 
 
