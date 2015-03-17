@@ -30,10 +30,26 @@ public class SegChinese {
 		
 		/*
 		 * 這裡可以指定自訂詞庫 (原本 ./src/SegChinese/data 下有本作者自定的許多 *.dic 檔案)
-		 * 文件中要求使用者要加入字定義詞典，直接修改或替換 src/dict/words.dic
+		 * 文件中要求使用者要加入自定義詞典，直接修改或替換 src/dict/words.dic
 		 */
-		System.setProperty("mmseg.dic.path", "src/dict"); 
-		dic = Dictionary.getInstance(); 
+        OSValidator os = new OSValidator();
+
+
+        // 根據作業系統開啟檔案的預設路徑
+        switch(os.getOSType())
+        {
+            case 1:		// Mac OS X
+            case 0:		// UNIX or Linux
+                System.setProperty("mmseg.dic.path", System.getProperty("user.dir")+ "/dict");
+                break;
+            case -1:	//Windows
+                System.setProperty("mmseg.dic.path", System.getProperty("user.dir")+ "\\dict");
+                break;
+            default: 	//others
+                System.out.println("System does not support.");
+                System.exit(1);
+        }
+		dic = Dictionary.getInstance();
 		
 	}// end of SegChinese()
 	
