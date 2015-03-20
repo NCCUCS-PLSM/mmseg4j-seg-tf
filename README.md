@@ -17,6 +17,7 @@ Rate(%):
 <br>2. 	WFC 的 runGUI 直接讀取 segArea 字串的話，目的是要減少 IO，但是 \*.wfc 仍需要的兩個原因是：
 	<br>(1) CLI 還是需要這個中間檔來做處理
 	<br>(2) 如果只是要斷詞結果，沒有要統計詞頻的話，這個中間檔就是必要的 (也許以後可以考慮詞頻統計完也不要刪除中間檔)
+	<br>(3) mmseg.dic.path 只能 set 一次，因為內建字典是在 mmseg4j-sll-1.8.2-with-dic.jar 中，src/dict，本來就是當時暫時寫死的自訂字典路徑，所以就把它改成user可以存取到的路徑吧! 不然包裝起來後user就不能改到 src/dict了
 
 
 #### TODO
